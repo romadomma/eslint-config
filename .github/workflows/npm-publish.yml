@@ -17,6 +17,6 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: yarn install --frozen-lockfile
-      - run: npm publish
+      - run: yarn publish --access public --new-version ${{ github.ref_name }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
