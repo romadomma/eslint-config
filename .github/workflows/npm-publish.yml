@@ -1,7 +1,7 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
-name: Node.js Package
+name: Publish to NPM
 
 on:
   release:
@@ -16,7 +16,11 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "roma-domma@yandex.ru"
       - run: yarn install --frozen-lockfile
       - run: yarn publish --access public --new-version ${{ github.ref_name }}
+      - run: git push
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
