@@ -1,6 +1,6 @@
 {
   "name": "@romadomma/eslint-config",
-  "version": "1.0.2",
+  "version": "0.0.6",
   "description": "my favorite eslint rules",
   "main": "index.mjs",
   "repository": {
