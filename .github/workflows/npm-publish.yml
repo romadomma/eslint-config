@@ -20,7 +20,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "roma-domma@yandex.ru"
           npm version from-git -m "Upgrade to %s version via Github Actions"
-          npm publish --verbose
-          git push
+          npm publish
+          git push HEAD:master
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
