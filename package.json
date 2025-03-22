@@ -1,11 +1,17 @@
 {
   "name": "@romadomma/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "my favorite eslint rules",
   "main": "index.mjs",
-  "repository": "https://github.com/romadomma/eslint",
+  "repository": "https://github.com/romadomma/eslint-config",
   "author": "Roman Kadykov <roma-domma@yandex.ru>",
   "license": "Apache-2.0",
+  "keywords": [
+    "eslint",
+    "rules",
+    "lint",
+    "typescript"
+  ],
   "private": false,
   "dependencies": {
     "@stylistic/eslint-plugin": "^4.2.0",
