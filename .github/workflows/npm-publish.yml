@@ -19,8 +19,8 @@ jobs:
           scope: '@romadomma'
       - run: git config user.name "github-actions[bot]"
       - run: git config user.email "roma-domma@yandex.ru"
-      - run: yarn install --frozen-lockfile
-      - run: yarn publish --access public --tag latest --new-version ${{github.ref_name}}
+      - run: npm version from-git -m "Upgrade to %s version via Github Actions"
+      - run: npm publish
       - run: git push
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
