@@ -3,7 +3,10 @@
   "version": "1.0.2",
   "description": "my favorite eslint rules",
   "main": "index.mjs",
-  "repository": "https://github.com/romadomma/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romadomma/eslint-config.git"
+  },
   "author": "Roman Kadykov <roma-domma@yandex.ru>",
   "license": "Apache-2.0",
   "keywords": [
