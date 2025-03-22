@@ -19,8 +19,7 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "roma-domma@yandex.ru"
-      - run: yarn install --frozen-lockfile
-      - run: yarn publish --access public --new-version ${{ github.ref_name }}
+      - run: yarn publish --new-version ${{ github.ref_name }}
       - run: git push
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
