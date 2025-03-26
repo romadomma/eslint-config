@@ -2,13 +2,14 @@
   "name": "@romadomma/eslint-config",
   "version": "0.0.7",
   "description": "my favorite eslint rules",
-  "main": "index.mjs",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/romadomma/eslint-config.git"
   },
   "author": "Roman Kadykov <roma-domma@yandex.ru>",
   "license": "Apache-2.0",
+  "type": "module",
   "keywords": [
     "eslint",
     "rules",
@@ -18,10 +19,11 @@
   "private": false,
   "dependencies": {
     "@stylistic/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/eslint-plugin": "^8.27.0",
-    "@typescript-eslint/parser": "^8.27.0"
+    "@typescript-eslint/parser": "^8.27.0",
+    "typescript-eslint": "^8.27.0"
   },
   "peerDependencies": {
-    "eslint": ">=9.0"
+    "eslint": ">=9.0",
+    "typescript": ">=5.0"
   }
 }
